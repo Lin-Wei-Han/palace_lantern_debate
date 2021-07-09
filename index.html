@@ -16,7 +16,8 @@
     </style>
     </head>
 <body>
-    <audio id="bell" src="audio/bell.mp3"></audio>
+    <audio id="bell1" src="audio/bell1.mp3"></audio>
+    <audio id="bell2" src="audio/bell2.mp3"></audio>
     <div id="fullpage">
  <!-- page home -->
             <div class="section home">
@@ -64,6 +65,8 @@
                     var min = 3;
                     var sec = 0;
                     var mytimer;
+                    var audio1 = document.getElementById("bell1");
+                    var audio2 = document.getElementById("bell2");
                     function start() {
                     if (control == 1) {
                         mytimer = setInterval(myTimer, 1000);
@@ -78,6 +81,7 @@
                             control = 1;
                             min = 3;
                             sec = 0;
+                            audio2.play()
                             document.getElementById("demo").innerHTML = "0:00";
                             return false;
                         }
@@ -90,6 +94,9 @@
                         } 
                         else
                             document.getElementById("demo").innerHTML = min + ":" + sec ;
+                        if (min ==0 && sec == 30){
+                        audio1.play() 
+                        }
                     }
                     function reset() {
                         clearInterval(mytimer);
@@ -132,6 +139,8 @@
                     var min12 = 1;
                     var sec12 = 30;
                     var mytimer12;
+                    var audio1 = document.getElementById("bell1");
+                    var audio2 = document.getElementById("bell2");
 
                     function start反二質() {
                         if (control12 == 1) {
@@ -146,6 +155,7 @@
                             control12 = 1;
                             min12 = 1;
                             sec12 = 30;
+                            audio2.play()
                             document.getElementById("demo12").innerHTML = "0:00";
                             return false;
                         }
@@ -158,6 +168,9 @@
                         } 
                         else
                             document.getElementById("demo12").innerHTML = min12 + ":" + sec12 ;
+                        if (min12 ==0 && sec12 == 30){
+                            audio1.play() 
+                            }
                         }
                         function reset反二質() {
                             clearInterval(mytimer12);
@@ -337,6 +350,8 @@
                         var min21 = 1;
                         var sec21 = 30;
                         var mytimer21;
+                        var audio1 = document.getElementById("bell1");
+                        var audio2 = document.getElementById("bell2");
                         function start正一質() {
                         if (control21 == 1) {
                             mytimer21 = setInterval(myTimer21, 1000);
@@ -351,6 +366,7 @@
                             control21 = 1;
                             min21 = 1;
                             sec21 = 30;
+                            audio2.play()
                             document.getElementById("demo21").innerHTML = "0:00";
                             return false;
                             }
@@ -363,6 +379,9 @@
                             } 
                             else
                                 document.getElementById("demo21").innerHTML = min21 + ":" + sec21 ;
+                            if (min21 ==0 && sec21 == 30){
+                            audio1.play() 
+                            }
                         }
                         function reset正一質() {
                             clearInterval(mytimer21);
@@ -403,6 +422,8 @@
                             var min22 = 3;
                             var sec22 = 0;
                             var mytimer22;
+                            var audio1 = document.getElementById("bell1");
+                            var audio2 = document.getElementById("bell2");
                             function start反二申() {
                             if (control22 == 1) {
                                 mytimer22 = setInterval(myTimer22, 1000);
@@ -417,6 +438,7 @@
                                 control22 = 1;
                                 min22 = 3;
                                 sec22 = 0;
+                                audio2.play()
                                 document.getElementById("demo22").innerHTML = "0:00";
                                 return false;
                                 }
@@ -429,6 +451,9 @@
                                 } 
                                 else
                                     document.getElementById("demo22").innerHTML = min22 + ":" + sec22 ;
+                                if (min22 ==0 && sec22 == 30){
+                                audio1.play() 
+                                }
                             }
                             function reset反二申() {
                                 clearInterval(mytimer22);
@@ -609,6 +634,8 @@
                         var min31 = 2;
                         var sec31 = 30;
                         var mytimer31;
+                        var audio1 = document.getElementById("bell1");
+                        var audio2 = document.getElementById("bell2");
                         function start正二駁論() {
                         if (control31 == 1) {
                             mytimer31 = setInterval(myTimer31, 1000);
@@ -623,6 +650,7 @@
                             control31 = 1;
                             min31 = 2;
                             sec31 = 30;
+                            audio2.play()
                             document.getElementById("demo31").innerHTML = "0:00";
                             return false;
                             }
@@ -635,6 +663,9 @@
                             } 
                             else
                                 document.getElementById("demo31").innerHTML = min31 + ":" + sec31 ;
+                                if (min31 ==0 && sec31 == 30){
+                                audio1.play() 
+                                }
                         }
                         function reset正二駁論() {
                             clearInterval(mytimer31);
@@ -675,6 +706,8 @@
                             var min32 = 2;
                             var sec32 = 30;
                             var mytimer32;
+                            var audio1 = document.getElementById("bell1");
+                            var audio2 = document.getElementById("bell2");
                             function start反二駁論() {
                             if (control32 == 1) {
                                 mytimer32 = setInterval(myTimer32, 1000);
@@ -689,6 +722,7 @@
                                 control32 = 1;
                                 min32 = 2;
                                 sec32 = 30;
+                                audio2.play()
                                 document.getElementById("demo32").innerHTML = "0:00";
                                 return false;
                                 }
@@ -701,6 +735,9 @@
                                 } 
                                 else
                                     document.getElementById("demo32").innerHTML = min32 + ":" + sec32 ;
+                                if (min32 ==0 && sec32 == 30){
+                                audio1.play() 
+                                }
                             }
                             function reset反二駁論() {
                                 clearInterval(mytimer32);
@@ -881,6 +918,8 @@
                         var min41 = 2;
                         var sec41 = 0;
                         var mytimer41;
+                        var audio1 = document.getElementById("bell1");
+                        var audio2 = document.getElementById("bell2");
 
                         function start正方對辯() {
                             if (control41 == 1) {
@@ -895,6 +934,7 @@
                                 min41 = 2;
                                 sec41 = 0;
                                 control41 = 1;
+                                audio2.play()
                                 document.getElementById("demo41").innerHTML = "0:00";
                                 return false;
                             }
@@ -907,6 +947,9 @@
                             } 
                             else
                                 document.getElementById("demo41").innerHTML = min41 + ":" + sec41 ;
+                                if (min41 ==0 && sec41 == 30){
+                                audio1.play() 
+                                }
                             }
                             function reset正方對辯() {
                                 clearInterval(mytimer41);
@@ -946,6 +989,8 @@
                             var min42 = 2;
                             var sec42 = 0;
                             var mytimer42;
+                            var audio1 = document.getElementById("bell1");
+                            var audio2 = document.getElementById("bell2");
         
                             function start反方對辯() {
                                 if (control42 == 1) {
@@ -960,6 +1005,7 @@
                                 min42 = 2;
                                 sec42 = 0;
                                 control42 = 1;
+                                audio2.play()
                                 document.getElementById("demo42").innerHTML = "0:00";
                                 return false;
                             }
@@ -972,6 +1018,9 @@
                                 } 
                                 else
                                     document.getElementById("demo42").innerHTML = min42 + ":" + sec42 ;
+                                if (min42 ==0 && sec42 == 30){
+                                audio1.play() 
+                                }
                                 }
                                 function reset反方對辯() {
                                     clearInterval(mytimer42);
@@ -1151,6 +1200,8 @@
                         var min51 = 2;
                         var sec51 = 30;
                         var mytimer51;
+                        var audio1 = document.getElementById("bell1");
+                        var audio2 = document.getElementById("bell2");
 
                         function start正方盤問() {
                             if (control51 == 1) {
@@ -1165,6 +1216,7 @@
                                 min51 = 2;
                                 sec51 = 30;
                                 control51 = 1;
+                                audio2.play()
                                 document.getElementById("demo51").innerHTML = "0:00";
                                 return false;
                             }
@@ -1177,6 +1229,9 @@
                             } 
                             else
                                 document.getElementById("demo51").innerHTML = min51 + ":" + sec51 ;
+                                if (min51 ==0 && sec51 == 30){
+                                audio1.play() 
+                                }
                             }
                             function reset正方盤問() {
                                 clearInterval(mytimer51);
@@ -1215,6 +1270,8 @@
                             var min52 = 2;
                             var sec52 = 30;
                             var mytimer52;
+                            var audio1 = document.getElementById("bell1");
+                            var audio2 = document.getElementById("bell2");
         
                             function start反方盤問() {
                                 if (control52 == 1) {
@@ -1229,6 +1286,7 @@
                                     min52 = 2;
                                     sec52 = 30;
                                     control52 = 1;
+                                    audio2.play()
                                     document.getElementById("demo52").innerHTML = "0:00";
                                     return false;
                                 }
@@ -1241,6 +1299,9 @@
                                 } 
                                 else
                                     document.getElementById("demo52").innerHTML = min52 + ":" + sec52 ;
+                                if (min52 ==0 && sec52 == 30){
+                                audio1.play() 
+                                }
                                 }
                                 function reset反方盤問() {
                                     clearInterval(mytimer52);
@@ -1420,6 +1481,8 @@
                         var min61 = 2;
                         var sec61 = 0;
                         var mytimer61;
+                        var audio1 = document.getElementById("bell1");
+                        var audio2 = document.getElementById("bell2");
 
                         function start正方小結() {
                             if (control61 == 1) {
@@ -1434,6 +1497,7 @@
                                 min61 = 2;
                                 sec61 = 0;
                                 control162 = 1;
+                                audio2.play()
                                 document.getElementById("demo61").innerHTML = "0:00";
                                 return false;
                             }
@@ -1446,6 +1510,9 @@
                             } 
                             else
                                 document.getElementById("demo61").innerHTML = min61 + ":" + sec61 ;
+                                if (min61 ==0 && sec61 == 30){
+                                audio1.play() 
+                                }
                             }
                             function reset正方小結() {
                                 clearInterval(mytimer61);
@@ -1484,6 +1551,8 @@
                             var min62 = 2;
                             var sec62 = 0;
                             var mytimer62;
+                            var audio1 = document.getElementById("bell1");
+                            var audio2 = document.getElementById("bell2");
         
                             function start反方小結() {
                                 if (control62 == 1) {
@@ -1498,6 +1567,7 @@
                                     min62 = 2;
                                     sec62 = 0;
                                     control62 = 1;
+                                    audio2.play()
                                     document.getElementById("demo62").innerHTML = "0:00";
                                     return false;
                                 }
@@ -1510,6 +1580,9 @@
                                 } 
                                 else
                                     document.getElementById("demo62").innerHTML = min62 + ":" + sec62 ;
+                                if (min62 ==0 && sec62 == 30){
+                                audio1.play() 
+                                }
                                 }
                                 function reset反方小結() {
                                     clearInterval(mytimer62);
@@ -1712,6 +1785,8 @@
                             var min71 = 4;
                             var sec71 = 0;
                             var mytimer71;
+                            var audio1 = document.getElementById("bell1");
+                            var audio2 = document.getElementById("bell2");
         
                             var control72 = 1;
                             var min72 = 4;
@@ -1745,6 +1820,7 @@
                                 min71 = 4;
                                 sec71 = 0;
                                 control71 = 1;
+                                audio2.play()
                                 document.getElementById("demo71").innerHTML = "0:00";
                                 return false;
                             }
@@ -1757,6 +1833,9 @@
                                 } 
                                 else
                                     document.getElementById("demo71").innerHTML = min71 + ":" + sec71 ;
+                                    if (min71 ==0 && sec71 == 30){
+                                audio1.play() 
+                                }
                             }
                             function reset正方() {
                                 clearInterval(mytimer71);
@@ -1784,6 +1863,7 @@
                                 min72 = 4;
                                 sec72 = 0;
                                 control72 = 1;
+                                audio2.play()
                                 document.getElementById("demo72").innerHTML = "0:00";
                                 return false;
                             }
@@ -1796,7 +1876,10 @@
                                 } 
                                 else
                                     document.getElementById("demo72").innerHTML = min72 + ":" + sec72 ;
+                                if (min72 ==0 && sec72 == 30){
+                                audio1.play() 
                                 }
+                            }
                             function reset反方() {
                                 clearInterval(mytimer72);
                                 min72 = 4;
@@ -1976,6 +2059,8 @@
                         var min81 = 4;
                         var sec81 = 30;
                         var mytimer81;
+                        var audio1 = document.getElementById("bell1");
+                        var audio2 = document.getElementById("bell2");
 
                         function start正方結辯() {
                             if (control81 == 1) {
@@ -1990,6 +2075,7 @@
                                     min81 = 4;
                                     sec81 = 30;
                                     control81 = 1;
+                                    audio2.play()
                                     document.getElementById("demo81").innerHTML = "0:00";
                                     return false;
                                 }
@@ -2002,6 +2088,9 @@
                             } 
                             else
                                 document.getElementById("demo81").innerHTML = min81 + ":" + sec81 ;
+                            if (min81 ==0 && sec81 == 30){
+                            audio1.play() 
+                            }
                             }
                             function reset正方結辯() {
                                 clearInterval(mytimer81);
@@ -2040,6 +2129,8 @@
                             var min82 = 4;
                             var sec82 = 30;
                             var mytimer82;
+                            var audio1 = document.getElementById("bell1");
+                            var audio2 = document.getElementById("bell2");
         
                             function start反方結辯() {
                                 if (control82 == 1) {
@@ -2054,6 +2145,7 @@
                                     min82 = 4;
                                     sec82 = 30;
                                     control82 = 1;
+                                    audio2.play()
                                     document.getElementById("demo82").innerHTML = "0:00";
                                     return false;
                                 }
@@ -2066,6 +2158,9 @@
                                 } 
                                 else
                                     document.getElementById("demo82").innerHTML = min82 + ":" + sec82 ;
+                                if (min82 ==0 && sec82 == 30){
+                                audio1.play() 
+                                }
                                 }
                                 function reset反方結辯() {
                                     clearInterval(mytimer82);
