@@ -1,8 +1,14 @@
+.body{
+    margin:0;
+    padding:0;
+    -moz-background-size:cover;
+    background-size: cover;
+}
+
 .special{
     color: rgb(59, 59, 59);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 }
 button{
     background-color:transparent;
@@ -24,7 +30,6 @@ button:active {
     font-weight: bold;
     margin-top: 220px;
     margin-left: 270px;
-    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 }
 .inner{
     margin-top: -190px;
@@ -42,7 +47,6 @@ button:active {
     font-weight: bold;
     margin-top: -470px;
     margin-left: 1040px;
-    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 }
 .innerright{
     margin-top: -190px;
@@ -60,7 +64,6 @@ button:active {
     font-weight: bold;
     margin-top: 220px;
     margin-left: 270px;
-    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 }
 .left2s7{
     color: rgb(59, 59, 59);
@@ -68,7 +71,6 @@ button:active {
     font-weight: bold;
     margin-top: -470px;
     margin-left: 1050px;
-    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 }
 .innerturn{
     margin-top: -80px;
@@ -85,7 +87,6 @@ button:active {
     font-weight: bold;
     margin-top: 220px;
     margin-left: 200px;
-    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 }
 .spare2{
         color: rgb(59, 59, 59);
@@ -93,7 +94,6 @@ button:active {
         font-weight: bold;
         margin-top: -470px;
         margin-left: 1010px;
-        text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 }
 .inner2rightspare{
     margin-top: -150px;
