@@ -301,11 +301,18 @@
                                 min112 -= 1;
                                 sec112 = 59
                             }
-                            if (sec112 < 10) {
+
+                            if (min112 < 10) {
+                                if (sec112 < 10)
+                                    document.getElementById("demo112").innerHTML = "0" + min112 + ":0" + sec112 ;
+                                else
+                                    document.getElementById("demo112").innerHTML = "0" + min112 + ":" + sec112 ;
+                            }
+                            else if (sec112 < 10)
                                 document.getElementById("demo112").innerHTML = min112 + ":0" + sec112 ;
-                            } 
                             else
                                 document.getElementById("demo112").innerHTML = min112 + ":" + sec112 ;
+
                             }
                             function reset裁判() {
                                 clearInterval(mytimer112);
@@ -585,9 +592,14 @@
                                 min122 -= 1;
                                 sec122 = 59
                             }
-                            if (sec122 < 10) {
+                            if (min122 < 10) {
+                                if (sec122 < 10)
+                                    document.getElementById("demo122").innerHTML = "0" + min122 + ":0" + sec122 ;
+                                else
+                                    document.getElementById("demo122").innerHTML = "0" + min122 + ":" + sec122 ;
+                            }
+                            else if (sec122 < 10)
                                 document.getElementById("demo122").innerHTML = min122 + ":0" + sec122 ;
-                            } 
                             else
                                 document.getElementById("demo122").innerHTML = min122 + ":" + sec122 ;
                             }
@@ -869,9 +881,14 @@
                                 min132 -= 1;
                                 sec132 = 59
                             }
-                            if (sec132 < 10) {
+                            if (min132 < 10) {
+                                if (sec132 < 10)
+                                    document.getElementById("demo132").innerHTML = "0" + min132 + ":0" + sec132 ;
+                                else
+                                    document.getElementById("demo132").innerHTML = "0" + min132 + ":" + sec132 ;
+                            }
+                            else if (sec132 < 10)
                                 document.getElementById("demo132").innerHTML = min132 + ":0" + sec132 ;
-                            } 
                             else
                                 document.getElementById("demo132").innerHTML = min132 + ":" + sec132 ;
                             }
@@ -1151,9 +1168,14 @@
                                 min142 -= 1;
                                 sec142 = 59
                             }
-                            if (sec142 < 10) {
+                            if (min142 < 10) {
+                                if (sec142 < 10)
+                                    document.getElementById("demo142").innerHTML = "0" + min142 + ":0" + sec142 ;
+                                else
+                                    document.getElementById("demo142").innerHTML = "0" + min142 + ":" + sec142 ;
+                            }
+                            else if (sec142 < 10)
                                 document.getElementById("demo142").innerHTML = min142 + ":0" + sec142 ;
-                            } 
                             else
                                 document.getElementById("demo142").innerHTML = min142 + ":" + sec142 ;
                             }
@@ -1432,9 +1454,14 @@
                                 min152 -= 1;
                                 sec152 = 59
                             }
-                            if (sec152 < 10) {
+                            if (min152 < 10) {
+                                if (sec152 < 10)
+                                    document.getElementById("demo152").innerHTML = "0" + min152 + ":0" + sec152 ;
+                                else
+                                    document.getElementById("demo152").innerHTML = "0" + min152 + ":" + sec152 ;
+                            }
+                            else if (sec152 < 10)
                                 document.getElementById("demo152").innerHTML = min152 + ":0" + sec152 ;
-                            } 
                             else
                                 document.getElementById("demo152").innerHTML = min152 + ":" + sec152 ;
                             }
@@ -1713,9 +1740,14 @@
                                 min162 -= 1;
                                 sec162 = 59
                             }
-                            if (sec162 < 10) {
+                            if (min162 < 10) {
+                                if (sec162 < 10)
+                                    document.getElementById("demo162").innerHTML = "0" + min162 + ":0" + sec162 ;
+                                else
+                                    document.getElementById("demo162").innerHTML = "0" + min162 + ":" + sec162 ;
+                            }
+                            else if (sec162 < 10)
                                 document.getElementById("demo162").innerHTML = min162 + ":0" + sec162 ;
-                            } 
                             else
                                 document.getElementById("demo162").innerHTML = min162 + ":" + sec162 ;
                             }
@@ -1819,7 +1851,6 @@
                                 clearInterval(mytimer71);
                                 min71 = 4;
                                 sec71 = 0;
-                                control71 = 1;
                                 audio2.play()
                                 document.getElementById("demo71").innerHTML = "0:00";
                                 return false;
@@ -1862,7 +1893,6 @@
                                 clearInterval(mytimer72);
                                 min72 = 4;
                                 sec72 = 0;
-                                control72 = 1;
                                 audio2.play()
                                 document.getElementById("demo72").innerHTML = "0:00";
                                 return false;
@@ -2010,9 +2040,14 @@
                                 min172 -= 1;
                                 sec172 = 59
                             }
-                            if (sec172 < 10) {
+                            if (min172 < 10) {
+                                if (sec172 < 10)
+                                    document.getElementById("demo172").innerHTML = "0" + min172 + ":0" + sec172 ;
+                                else
+                                    document.getElementById("demo172").innerHTML = "0" + min172 + ":" + sec172 ;
+                            }
+                            else if (sec172 < 10)
                                 document.getElementById("demo172").innerHTML = min172 + ":0" + sec172 ;
-                            } 
                             else
                                 document.getElementById("demo172").innerHTML = min172 + ":" + sec172 ;
                             }
@@ -2291,9 +2326,14 @@
                                 min182 -= 1;
                                 sec182 = 59
                             }
-                            if (sec182 < 10) {
+                            if (min182 < 10) {
+                                if (sec182 < 10)
+                                    document.getElementById("demo182").innerHTML = "0" + min182 + ":0" + sec182 ;
+                                else
+                                    document.getElementById("demo182").innerHTML = "0" + min182 + ":" + sec182 ;
+                            }
+                            else if (sec182 < 10)
                                 document.getElementById("demo182").innerHTML = min182 + ":0" + sec182 ;
-                            } 
                             else
                                 document.getElementById("demo182").innerHTML = min182 + ":" + sec182 ;
                             }
