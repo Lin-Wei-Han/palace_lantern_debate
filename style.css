@@ -214,6 +214,22 @@ button:active {
   }
 
 
+  @media screen and (orientation: landscape) and (max-width: 568px){
+    .ml11 {
+        margin-top: 0%;
+        margin-left: 10%;
+        font-weight: 700;
+        font-size: 320%;
+      }
+    .ml1 {
+        margin-top: -5%;
+        margin-left: 10%;
+        font-weight: 900;
+        font-size: 150%;
+      }
+
+  }
+
   @import url(font-awesome.min.css);
   @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:900&display=swap');
