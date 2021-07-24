@@ -1827,10 +1827,18 @@
         
                             function turn(){
                                     if(control71==0){
+                                        if(control72==1){
                                         clearInterval(mytimer71);
                                         mytimer72 = setInterval(myTimer72, 1000);
                                         control71 = 1;
                                         control72 = 0;
+                                        }
+                                        else{
+                                            clearInterval(mytimer71);
+                                            clearInterval(mytimer72);
+                                            control71 = 1;
+                                            control72 = 1;
+                                        }
                                     }
                                     else{
                                         clearInterval(mytimer72);
