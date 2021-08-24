@@ -44,7 +44,7 @@
                 <section id="main">
                     <div class="left">
                         <head class="left">
-                            <p style="font-size: 90px;">正方</p>
+                            <p style="font-size: 90px;">正一</p>
                         </head>
                     </div>
                     <div class="inner">
@@ -117,7 +117,7 @@
                     <section id="main2">
                         <div class="left2">
                             <head class="left2">
-                                <p style="font-size: 90px;">反方</p>
+                                <p style="font-size: 90px;">反一</p>
                             </head>
                         </div>
                         <div class="innerright">
@@ -336,7 +336,7 @@
                     <section id="main">
                         <div class="left">
                             <head class="left">
-                                <p style="font-size: 90px;">正方</p>
+                                <p style="font-size: 90px;">正一</p>
                             </head>
                         </div>
                         <div class="inner">
@@ -408,7 +408,7 @@
                         <section id="main2">
                             <div class="left2">
                                 <head class="left2">
-                                    <p style="font-size: 90px;">反方</p>
+                                    <p style="font-size: 90px;">反一</p>
                                 </head>
                             </div>
                             <div class="innerright">
@@ -625,7 +625,7 @@
                     <section id="main">
                         <div class="left">
                             <head class="left">
-                                <p style="font-size: 90px;">正方</p>
+                                <p style="font-size: 90px;">正二</p>
                             </head>
                         </div>
                         <div class="inner">
@@ -914,7 +914,7 @@
                     <section id="main">
                         <div class="left">
                             <head class="left">
-                                <p style="font-size: 90px;">正方</p>
+                                <p style="font-size: 90px;">正二</p>
                             </head>
                         </div>
                         <div class="inner">
@@ -930,62 +930,11 @@
                             <button onclick="reset正方對辯()"><img src="images/restart.png"width="60px" margin-left="200px;"></button>
                         </div>
                     </section>
-                    <script>
-                        var control41 = 1;
-                        var min41 = 2;
-                        var sec41 = 0;
-                        var mytimer41;
-                        var audio1 = document.getElementById("bell1");
-                        var audio2 = document.getElementById("bell2");
-
-                        function start正方對辯() {
-                            if (control41 == 1) {
-                                mytimer41 = setInterval(myTimer41, 1000);
-                                control41--;
-                            }
-                        }
-                        function myTimer41() {
-                            sec41 -= 1;
-                            if (min41 <= 0 && sec41 <= 0 ) {
-                                clearInterval(mytimer41);
-                                min41 = 2;
-                                sec41 = 0;
-                                control41 = 1;
-                                audio2.play()
-                                document.getElementById("demo41").innerHTML = "0:00";
-                                return false;
-                            }
-                            if (sec41 < 0) {
-                                min41 -= 1;
-                                sec41 = 59
-                            }
-                            if (sec41 < 10) {
-                                document.getElementById("demo41").innerHTML = min41 + ":0" + sec41 ;
-                            } 
-                            else
-                                document.getElementById("demo41").innerHTML = min41 + ":" + sec41 ;
-                                if (min41 ==0 && sec41 == 30){
-                                audio1.play() 
-                                }
-                            }
-                            function reset正方對辯() {
-                                clearInterval(mytimer41);
-                                min41 = 2;
-                                sec41 = 00;
-                                document.getElementById("demo41").innerHTML = min41 + ":0" + sec41 ;
-                                control41 = 1;
-                            }
-                            function pause正方對辯() {
-                                clearInterval(mytimer41);
-                                control41 = 1;
-                            }
-                        </script>
-
                 <!-- 反方計時器 -->
                         <section id="main2">
                             <div class="left2">
                                 <head class="left2">
-                                    <p style="font-size: 90px;">反方</p>
+                                    <p style="font-size: 90px;">反二</p>
                                 </head>
                             </div>
                             <div class="innerright">
@@ -1000,14 +949,86 @@
                                 <button onclick="pause反方對辯()"><img src="images/pause.png"width="60px"></button>&emsp;
                                 <button onclick="reset反方對辯()"><img src="images/restart.png"width="60px"></button>
                             </div>
+                            <div class="innerturn">
+                                <button onclick="turn對辯()"><img src="images/turn.png"width="120px" ></button>
+                            </div>
                         </section>
                         <script>
+                            var control41 = 1;
+                            var min41 = 2;
+                            var sec41 = 0;
+                            var mytimer41;
+                            var audio1 = document.getElementById("bell1");
+                            var audio2 = document.getElementById("bell2");
+        
                             var control42 = 1;
                             var min42 = 2;
                             var sec42 = 0;
                             var mytimer42;
-                            var audio1 = document.getElementById("bell1");
-                            var audio2 = document.getElementById("bell2");
+        
+                            function turn對辯(){
+                                    if(control41==0){
+                                        if(control42==1){
+                                        clearInterval(mytimer41);
+                                        mytimer42 = setInterval(myTimer42, 1000);
+                                        control41 = 1;
+                                        control42 = 0;
+                                        }
+                                        else{
+                                            clearInterval(mytimer41);
+                                            clearInterval(mytimer42);
+                                            control41 = 1;
+                                            control42 = 1;
+                                        }
+                                    }
+                                    else{
+                                        clearInterval(mytimer42);
+                                        mytimer41 = setInterval(myTimer41, 1000);
+                                        control42 = 1;
+                                        control41 = 0;
+                                    }
+                                }
+                            function start正方對辯() {
+                                if (control41 == 1) {
+                                    mytimer41 = setInterval(myTimer41, 1000);
+                                    control41--;
+                                }
+                            }
+                            function myTimer41() {
+                                sec41 -= 1;
+                            if (min41 <= 0 && sec41 <= 0 ) {
+                                clearInterval(mytimer41);
+                                min41 = 2;
+                                sec41 = 0;
+                                audio2.play()
+                                document.getElementById("demo41").innerHTML = "0:00";
+                                return false;
+                            }
+                                if (sec41 < 0) {
+                                    min41 -= 1;
+                                    sec41 = 59
+                                }
+                                if (sec41 < 10) {
+                                    document.getElementById("demo41").innerHTML = min41 + ":0" + sec41 ;
+                                } 
+                                else
+                                    document.getElementById("demo41").innerHTML = min41 + ":" + sec41 ;
+                                    if (min41 ==0 && sec41 == 30){
+                                audio1.play() 
+                                }
+                            }
+                            function reset正方對辯() {
+                                clearInterval(mytimer41);
+                                min41 = 2;
+                                sec41 = 00;
+                                document.getElementById("demo41").innerHTML = min41 + ":" + "0" + sec41 ;
+                                control41 = 1;
+                            }
+            
+                            function pause正方對辯() {
+                                clearInterval(mytimer41);
+                                control41 = 1;
+                            }
         
                             function start反方對辯() {
                                 if (control42 == 1) {
@@ -1021,7 +1042,6 @@
                                 clearInterval(mytimer42);
                                 min42 = 2;
                                 sec42 = 0;
-                                control42 = 1;
                                 audio2.play()
                                 document.getElementById("demo42").innerHTML = "0:00";
                                 return false;
@@ -1038,19 +1058,20 @@
                                 if (min42 ==0 && sec42 == 30){
                                 audio1.play() 
                                 }
-                                }
-                                function reset反方對辯() {
-                                    clearInterval(mytimer42);
-                                    min42 = 2;
-                                    sec42 = 00;
-                                    document.getElementById("demo42").innerHTML = min42 + ":0" + sec42 ;
-                                    control42 = 1;
-                                }
-                                function pause反方對辯() {
-                                    clearInterval(mytimer42);
-                                    control42 = 1;
-                                }
-                            </script>
+                            }
+                            function reset反方對辯() {
+                                clearInterval(mytimer42);
+                                min42 = 2;
+                                sec42 = 00;
+                                document.getElementById("demo42").innerHTML = min42 + ":0" + sec42 ;
+                                control42 = 1;
+                            }
+                
+                            function pause反方對辯() {
+                                clearInterval(mytimer42);
+                                control42 = 1;
+                            }
+                        </script>
                 </h1>
                 </div>
                 <div class="slide">
@@ -1201,7 +1222,7 @@
                     <section id="main">
                         <div class="left">
                             <head class="left">
-                                <p style="font-size: 90px;">正方</p>
+                                <p style="font-size: 90px;">正三</p>
                             </head>
                         </div>
                         <div class="inner">
@@ -1271,7 +1292,7 @@
                         <section id="main2">
                             <div class="left2">
                                 <head class="left2">
-                                    <p style="font-size: 90px;">反方</p>
+                                    <p style="font-size: 90px;">反三</p>
                                 </head>
                             </div>
                             <div class="innerright">
@@ -1487,7 +1508,7 @@
                     <section id="main">
                         <div class="left">
                             <head class="left">
-                                <p style="font-size: 90px;">正方</p>
+                                <p style="font-size: 90px;">正三</p>
                             </head>
                         </div>
                         <div class="inner">
@@ -1557,7 +1578,7 @@
                         <section id="main2">
                             <div class="left2">
                                 <head class="left2">
-                                    <p style="font-size: 90px;">反方</p>
+                                    <p style="font-size: 90px;">反三</p>
                                 </head>
                             </div>
                             <div class="innerright">
@@ -2081,7 +2102,7 @@
                     <section id="main">
                         <div class="left">
                             <head class="left">
-                                <p style="font-size: 90px;">正方</p>
+                                <p style="font-size: 90px;">正四</p>
                             </head>
                         </div>
                         <div class="inner">
@@ -2151,7 +2172,7 @@
                         <section id="main2">
                             <div class="left2">
                                 <head class="left2">
-                                    <p style="font-size: 90px;">反方</p>
+                                    <p style="font-size: 90px;">反四</p>
                                 </head>
                             </div>
                             <div class="innerright">
